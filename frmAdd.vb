@@ -1,6 +1,31 @@
 ﻿Imports System.Data.SqlClient
 Public Class frmAdd
-
+    '--------------------------------------------------------------------------------
+    '-                      File Name: frmAdd                                       -
+    '-                      Part of Project: Vehicle/ Owner Database (cis311 HW8)   -
+    '--------------------------------------------------------------------------------
+    '-                      Written By: Andrew A. Loesel                            -
+    '-                      Written On: April 1, 2022                               -
+    '--------------------------------------------------------------------------------
+    '- File Purpose:                                                                -
+    '-                                                                              -
+    '- This File is not used in the current build of the program. This form was crea-
+    '- ted when I had thought that we needed a form to display when the user clicked-
+    '- the add or update buttons on the main form. This code will work for that purp-
+    '- ose given that it is properly implemented in Form1. However, the problem     -
+    '- description led me to believe that it should all be done on one form.        -
+    '--------------------------------------------------------------------------------
+    '- Program Purpose:                                                             -
+    '-                                                                              -
+    '- The purpose of this program is to act as a databse front end. The database   -
+    '- consists of a Vehicle table, which has information on certain Vehicles and   -
+    '- which owner owns the vehicle, and an Owner table which has information about -
+    '- the Owners such as names and addresses. The user will be able to perform all -
+    '- of the CRUD operations on the database.                                      -
+    '--------------------------------------------------------------------------------
+    '- Global Variable Dictionary (alphabetically):                                 -
+    '- None                                                                         -
+    '--------------------------------------------------------------------------------
     Public Const gstrDBName As String = "C:\Users\jzpbqq\source\repos\cis311HW8dbProject\MSSQLLocalDB\HW8.mdf"
 
     Public Const gstrConnString As String = "Server=(localdb)\MSSQLLocalDB;" &
