@@ -41,12 +41,16 @@ Partial Class Form1
         Me.txtLName = New System.Windows.Forms.TextBox()
         Me.txtFName = New System.Windows.Forms.TextBox()
         Me.dgvVehicle = New System.Windows.Forms.DataGridView()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.gboInformation.SuspendLayout()
         CType(Me.dgvVehicle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gboInformation
         '
+        Me.gboInformation.Controls.Add(Me.btnCancel)
+        Me.gboInformation.Controls.Add(Me.btnSave)
         Me.gboInformation.Controls.Add(Me.btnLast)
         Me.gboInformation.Controls.Add(Me.btnNext)
         Me.gboInformation.Controls.Add(Me.btnDelete)
@@ -244,14 +248,36 @@ Partial Class Form1
         Me.dgvVehicle.Name = "dgvVehicle"
         Me.dgvVehicle.RowHeadersWidth = 62
         Me.dgvVehicle.RowTemplate.Height = 33
-        Me.dgvVehicle.Size = New System.Drawing.Size(718, 137)
+        Me.dgvVehicle.Size = New System.Drawing.Size(718, 187)
         Me.dgvVehicle.TabIndex = 1
+        '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(183, 175)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(78, 34)
+        Me.btnSave.TabIndex = 17
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
+        Me.btnSave.Visible = False
+        '
+        'btnCancel
+        '
+        Me.btnCancel.Location = New System.Drawing.Point(322, 175)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(78, 34)
+        Me.btnCancel.TabIndex = 18
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = True
+        Me.btnCancel.Visible = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(736, 426)
+        Me.ClientSize = New System.Drawing.Size(739, 455)
         Me.Controls.Add(Me.dgvVehicle)
         Me.Controls.Add(Me.gboInformation)
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -283,4 +309,6 @@ Partial Class Form1
     Friend WithEvents txtLName As TextBox
     Friend WithEvents txtFName As TextBox
     Friend WithEvents dgvVehicle As DataGridView
+    Friend WithEvents btnCancel As Button
+    Friend WithEvents btnSave As Button
 End Class
